@@ -1,0 +1,132 @@
+.main {
+  background-color: green;
+}
+
+.mail-link {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.logo {
+  border-radius: 20px;
+}
+.prev-icon {
+  background-color: green;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+.next-icon {
+  background-color: green;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.card-bg {
+  background-color: rgb(248, 250, 248);
+}
+.text-color {
+  color: rgb(5, 5, 116);
+}
+.c {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.course {
+  background: url("../../assets/images/course-logo3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+}
+.course {
+  padding-top: 460px;
+}
+.course-title {
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.reso-knr {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+// .bg-course {
+//   background-color: rgb(235, 252, 228);
+// }
+.course-bg {
+  background-color: #c2d32e;
+  border-radius: 50%;
+}
+.read-link {
+  text-decoration: none;
+  float: right;
+  color: #3c403c;
+}
+.read-link:hover {
+  color: blue;
+}
+.card-shadow {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.cs {
+  color: rgb(5, 5, 116);
+}
+.result {
+  background-color: #f8f9f4;
+}
+.bg-result {
+  background-color: #85b006;
+  box-shadow: 14px 12px 3px -5px rgba(0, 0, 0, 0.3),
+    0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.img-result {
+  --s: 15px; /* size of the frame */
+  --b: 2px; /* border thickness */
+  --w: 100%; /* width of the image */
+  --c: #fbfbfb;
+
+  width: var(--w);
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: calc(2 * var(--s));
+  --_g: var(--c) var(--b), #0000 0 calc(100% - var(--b)), var(--c) 0;
+  background: linear-gradient(var(--_g)) 50%/100% var(--_i, 100%) no-repeat,
+    linear-gradient(90deg, var(--_g)) 50% / var(--_i, 100%) 100% no-repeat;
+  outline: calc(var(--w) / 2) solid #0009;
+  outline-offset: calc(var(--w) / -2 - 2 * var(--s));
+  transition: 0.4s;
+  cursor: pointer;
+}
+.img-result:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: calc(var(--s) / -2);
+  --_i: calc(100% - 2 * var(--s));
+}
+
+.result-head {
+  overflow: hidden;
+  text-align: left;
+  line-height: 1.6em;
+  font-size: 40px;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0px;
+  color: #163269;
+}
+
+.result-head:before {
+  display: block;
+  float: right;
+  margin-top: 0.9em; /* half the line-height */
+  border-top: 5px solid silver;
+  width: 75%;
+  content: "";
+}

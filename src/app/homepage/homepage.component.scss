@@ -14,6 +14,9 @@
 .logo {
   border-radius: 20px;
 }
+.nav-link{
+  cursor: pointer;
+}
 .prev-icon {
   background-color: green;
   color: white;
@@ -45,16 +48,16 @@
   height: 650px;
 }
 .course {
-  padding-top: 460px;
+  padding-top: 200px;
 }
 .course-title {
-  color: white;
+  color: green;
   font-size: 60px;
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .reso-knr {
-  color: white;
+  color: green;
   font-size: 40px;
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

@@ -89,7 +89,7 @@
       </div>
     </div>
   </div>
-  <div class="row head " id="home">
+  <div class="row head " id="home" [ngClass]="statusClass" #home>
     <div class="col-sm-11 m-auto head1">
       <div class="row">
         <div class="col-sm-3">
@@ -113,7 +113,7 @@
             <div class="container-fluid">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link ms-4 me-4" href="#home">Home</a>
+                  <a class="nav-link ms-4 me-4" (click)="scrollToHome(home)">Home</a>
                 </li>
               </ul>
               <button
@@ -130,10 +130,10 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item ms-4 me-4">
-                    <a class="nav-link" href="#courses">Courses</a>
+                    <a class="nav-link" (click)="scrollToCourse(course)">Courses</a>
                   </li>
                   <li class="nav-item ms-4 me-4">
-                    <a class="nav-link" href="#results">Results</a>
+                    <a class="nav-link" (click)="scrollToResults(result)">Results</a>
                   </li>
                   <li class="nav-item ms-4 me-4">
                     <a class="nav-link" href="#">Life @ Resonance</a>
@@ -142,10 +142,10 @@
                     <a class="nav-link" href="#">Way of Learning</a>
                   </li>
                   <li class="nav-item ms-4 me-4">
-                    <a class="nav-link" href="#about">About us</a>
+                    <a class="nav-link" (click)="scrollToAbout(about)">About us</a>
                   </li>
                   <li class="nav-item ms-4 me-4">
-                    <a class="nav-link" href="#contact">Contact us</a>
+                    <a class="nav-link" (click)="scrollToContact(contact)">Contact us</a>
                   </li>
                 </ul>
               </div>
@@ -244,7 +244,7 @@
       </div>
     </div>
   </div>
-  <div class="row space" id="courses">
+  <div class="row space" id="courses" [ngClass]="statusClass" #course>
     <div class="course">
       <h1 class="course-title ms-4">Courses</h1>
       <h3 class="reso-knr ms-4">Resonance Karimnagar</h3>
@@ -463,7 +463,7 @@
       </div>
     </div>
   </div>
-  <div class="row result space" id="results">
+  <div class="row result space" id="results" [ngClass]="statusClass" #result>
     <div class="col-sm-9 bg-result text-white mt-1">
       <h2>Results</h2>
     </div>
@@ -503,7 +503,7 @@
       </div>
     </div>
   </div>
-  <div class="row space" id="about">
+  <div class="row space" id="about" [ngClass]="statusClass" #about>
     <div class="result-head">
       <h2 class="ms-4">About Us</h2>
     </div>
@@ -558,7 +558,7 @@
       <img src="assets/images/about2.webp" alt="">
     </div>
   </div>
-  <div class="row space" id="contact">
+  <div class="row space" id="contact" [ngClass]="statusClass" #contact>
     <div class="result-head">
       <h2 class="ms-4">Contact Us</h2>
     </div>

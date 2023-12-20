@@ -1,30 +1,35 @@
 <div class="container-fluid">
-  <div class="row main p-2">
+  <div class="row main p-1">
     <div class="col-sm-11 m-auto">
       <div class="row">
-        <div class="col-sm-10">
+        <div class="col-sm-6">
           <a class="mail-link" href="mailto:contact@resonancekarimnagar.com">
-            <span><i class="bi bi-envelope-open"></i></span>&nbsp;
+            <span><i class="bi bi-envelope-open me-1"></i></span>
             contact@resonancekarimnagar.com
           </a>
           <a class="mail-link ms-4" href="tel:+91 912 121 9858">
-            <span><i class="bi bi-telephone-outbound"></i></span>&nbsp; +91
+            <span><i class="bi bi-telephone-outbound me-1"></i></span> +91
             9966533347
           </a>
+        </div>
+        <div class="col-sm-4">
+          <a class="mail-link ms-4" href=""> <span></span>&nbsp; Gallery </a>
+          <a class="mail-link ms-4" href=""> <span></span>&nbsp; Blog </a>
+          <a class="mail-link ms-4" href=""> <span></span>&nbsp; Media </a>
+          <a class="mail-link ms-4" href=""> <span></span>&nbsp; Faq </a>
         </div>
         <div class="col-sm-2">
           <div class="">
             <div class="text-end">
               <button
-              type="button"
-              class="btn btn-outline-light btn-sm fw-bold"
-              data-bs-toggle="modal"
-              data-bs-target=".bd-example-modal-lg"
-            >
-              Admin Login
-            </button>
+                type="button"
+                class="btn btn-outline-light btn-sm"
+                data-bs-toggle="modal"
+                data-bs-target=".bd-example-modal-lg"
+              >
+                Admin Login
+              </button>
             </div>
-           
 
             <div
               class="modal fade bd-example-modal-lg mt-4"
@@ -48,7 +53,23 @@
                     <div class="col-sm-6">
                       <div class="card border-0 mt-4">
                         <div class="card-header">
-                          <h5 class="mb-0">Admin Login</h5>
+                          <div class="row">
+                            <div class="col-sm-10">
+                              <h5 class="mb-0">Admin Login</h5>
+                            </div>
+                            <div class="col-sm-2">
+                              <button
+                                type="button"
+                                class="close btn btn-basic p-2"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <span class="text-end" aria-hidden="true"
+                                  >x</span
+                                >
+                              </button>
+                            </div>
+                          </div>
                         </div>
                         <form>
                           <div class="card-body">
@@ -112,12 +133,12 @@
     <div class="card bg-nav border-0">
       <div class="row">
         <div class="col-sm-11 m-auto">
-          <nav class="navbar navbar-expand-lg mt-2 fw-bold">
+          <nav class="navbar navbar-expand-lg fw-bold p-0">
             <div class="container-fluid">
-              <ul class="navbar-nav">
+              <ul class="navbar-nav p-0">
                 <li class="nav-item">
-                  <a class="nav-link ms-4 me-4" (click)="scrollToHome(home)"
-                    >Home</a
+                  <a class="nav-link me-4" (click)="scrollToHome(home)">
+                    <i class="bi bi-house"></i>Home</a
                   >
                 </li>
               </ul>
@@ -134,28 +155,34 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                  <li class="nav-item ms-4 me-4">
+                  <li class="nav-item me-4">
                     <a class="nav-link" (click)="scrollToCourse(course)"
                       >Courses</a
                     >
                   </li>
-                  <li class="nav-item ms-4 me-4">
+                  <li class="nav-item me-4">
+                    <a class="nav-link">Admissions</a>
+                  </li>
+                  <li class="nav-item me-4">
                     <a class="nav-link" (click)="scrollToResults(result)"
                       >Results</a
                     >
                   </li>
-                  <li class="nav-item ms-4 me-4">
+                  <li class="nav-item me-4">
+                    <a class="nav-link">Campus</a>
+                  </li>
+                  <li class="nav-item me-4">
                     <a class="nav-link" href="#">Life @ Resonance</a>
                   </li>
-                  <li class="nav-item ms-4 me-4">
+                  <li class="nav-item me-4">
                     <a class="nav-link" href="#">Way of Learning</a>
                   </li>
-                  <li class="nav-item ms-4 me-4">
+                  <li class="nav-item me-4">
                     <a class="nav-link" (click)="scrollToAbout(about)"
                       >About us</a
                     >
                   </li>
-                  <li class="nav-item ms-4 me-4">
+                  <li class="nav-item me-4">
                     <a class="nav-link" (click)="scrollToContact(contact)"
                       >Contact us</a
                     >
@@ -517,80 +544,199 @@
     </div>
   </div>
   <div class="row space" id="about" [ngClass]="statusClass" #about>
-    <div class="result-head">
+    <div class="bg-light">
       <h2 class="ms-4">About Us</h2>
     </div>
+    <div class="row">
+      <div class="col-sm-6 m-auto">
+        <img
+          src="assets/images/aboutus.webp"
+          width="100%"
+          height="600px"
+          alt=""
+          style="padding: 10px"
+        />
+      </div>
+      <div class="col-sm-6">
+        <p class="p-2 mt-4 about">
+          After training thousands of IIT, NIT, and NEET aspirants across India,
+          Resonance Kota brings its 20-year legacy and success streak to
+          Karimnagar. A brainchild of our founder, Mr. R.K. Verma, Resonance is
+          an esteemed institution where we pride ourselves in having the best
+          Kota faculty to train students while providing study material that can
+          be classified as the best in the industry. Besides our well-researched
+          syllabus and teaching methodologies, we also provide a special student
+          mentorship program to ensure that our students are not only excelling
+          in academics but are also ready for the dynamic life ahead. If you
+          have any questions or comments, please contact us at 9966533347
+        </p>
+        <p class="p-2 mt-2 about">
+          After training thousands of IIT, NIT, and NEET aspirants across India,
+          Resonance Kota brings its 20-year legacy and success streak to
+          Karimnagar. A brainchild of our founder, Mr. R.K. Verma, Resonance is
+          an esteemed institution where we pride ourselves in having the best
+          Kota faculty to train students while providing study material that can
+          be classified as the best in the industry. Besides our well-researched
+          syllabus and teaching methodologies, we also provide a special student
+          mentorship program to ensure that our students are not only excelling
+          in academics but are also ready for the dynamic life ahead. If you
+          have any questions or comments, please contact us at 9966533347
+        </p>
+      </div>
+      <div class="p-4">
+        <h3>Academic Team</h3>
+        <p class="about">
+          A team of India’s finest faculty members is the core of the Resonance
+          experience. Most of our faculty members are IITians/NITians for the
+          PreEngineering Division or Doctors from the top Medical Colleges of
+          India for the Medical Division, CAS/CS/MBAs/Law Graduates for the
+          Commerce & Law Program Division.
+        </p>
+        <p class="about">
+          All the faculty members are recruited through a rigorous recruitment
+          process that involves scrutiny of applications, written test,
+          demonstration lecture, and personal interview.
+        </p>
+        <p class="about">
+          Newly recruited faculty members undergo an intensive training program
+          called Faculty Training Program (FTP) where his/her knowledge,
+          attitude, and communication are further sharpened. New faculty members
+          also attend the classes of senior faculty members to understand the
+          teaching methodology, effective use of teaching aids, and general
+          behavior in the classroom.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-10 m-auto">
+        <img src="assets/images/india-reso.jpg" alt="" width="100%" height="450" />
+      </div>
   </div>
-  <div class="row">
-    <div class="col-sm-6 m-auto">
-      <img
-        src="assets/images/aboutus.webp"
-        width="100%"
-        height="500px"
-        alt=""
-        style="padding: 20px"
-      />
+  <div class="row space" id="contact" [ngClass]="statusClass" #contact>
+    <div class="bg-light mb-2">
+      <h3 class="ms-4">Contact Us</h3>
     </div>
-    <div class="col-sm-6">
-      <p class="p-2 mt-3 about">
-        After training thousands of IIT, NIT, and NEET aspirants across India,
-        Resonance Kota brings its 20-year legacy and success streak to
-        Karimnagar. A brainchild of our founder, Mr. R.K. Verma, Resonance is an
-        esteemed institution where we pride ourselves in having the best Kota
-        faculty to train students while providing study material that can be
-        classified as the best in the industry. Besides our well-researched
-        syllabus and teaching methodologies, we also provide a special student
-        mentorship program to ensure that our students are not only excelling in
-        academics but are also ready for the dynamic life ahead. If you have any
-        questions or comments, please contact us at 9966533347
-      </p>
-    </div>
-    <div class="p-4">
-      <h3>Academic Team</h3>
-      <p class="about">
-        A team of India’s finest faculty members is the core of the Resonance
-        experience. Most of our faculty members are IITians/NITians for the
-        PreEngineering Division or Doctors from the top Medical Colleges of
-        India for the Medical Division, CAS/CS/MBAs/Law Graduates for the
-        Commerce & Law Program Division.
-      </p>
-      <p class="about">
-        All the faculty members are recruited through a rigorous recruitment
-        process that involves scrutiny of applications, written test,
-        demonstration lecture, and personal interview.
-      </p>
-      <p class="about">
-        Newly recruited faculty members undergo an intensive training program
-        called Faculty Training Program (FTP) where his/her knowledge, attitude,
-        and communication are further sharpened. New faculty members also attend
-        the classes of senior faculty members to understand the teaching
-        methodology, effective use of teaching aids, and general behavior in the
-        classroom.
-      </p>
-      <div>
-        <img src="assets/images/about1.webp" alt="" width="100%" height="300" />
-        <img src="assets/images/about2.webp" alt="" width="100%" height="300" />
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card contact-bg border-0">
+          <div class="card-header ps-3">
+            <h5 class="mb-0 text-muted">
+              <span><i class="bi bi-geo-alt"></i></span> Admissions Office
+            </h5>
+            <p class="mb-0 ms-4 text-muted address">
+              Opp. Indian Petrol Bunk, Jagitial Road,
+            </p>
+            <p class="ms-4 text-muted address">KARIMNAGAR - 505001.</p>
+            <p class="fw-bold mb-0">
+              <span><i class="bi bi-envelope-open me-1"></i></span>Email:
+              <a class="gmail" href="mailto:contact@resonancekarimnagar.com">
+                contact@resonancekarimnagar.com
+              </a>
+            </p>
+            <p class="fw-bold mb-0">
+              <span><i class="bi bi-telephone-outbound me-1"></i></span>Mobile:
+              <a class="phone" href="tel:+91 912 121 9858"> +91 9966533347 </a>
+            </p>
+          </div>
+          <div class="card-body">
+            <h5 class="text-center text-dark fw-bold info">
+              Leave us your info
+            </h5>
+            <div class="p-2">
+              <form>
+                <div class="mb-1">
+                  <label class="info-label">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control form-control-sm info-input"
+                    id="fullname"
+                  />
+                </div>
+                <div class="mb-1">
+                  <label class="info-label">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control form-control-sm info-input"
+                    id="email"
+                  />
+                </div>
+                <div class="mb-1">
+                  <label class="info-label">Mobile Number</label>
+                  <input
+                    type="number"
+                    class="form-control form-control-sm info-input"
+                    id=""
+                  />
+                </div>
+                <div class="mb-1">
+                  <label class="info-label" for="">Gender</label>
+                  <select class="form-control form-control-sm info-input" id="">
+                    <option value="">--- Select Gender ---</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
+                <div class="mb-1">
+                  <label class="info-label">Parent Name</label>
+                  <input
+                    type="text"
+                    class="form-control form-control-sm info-input"
+                    id=""
+                  />
+                </div>
+                <div class="mb-1">
+                  <label class="info-label">Parent Number</label>
+                  <input
+                    type="number"
+                    class="form-control form-control-sm info-input"
+                    id="number"
+                  />
+                </div>
+                <div class="mb-1">
+                  <label class="info-label">City</label>
+                  <input
+                    type="text"
+                    class="form-control form-control-sm info-input"
+                    id=""
+                  />
+                </div>
+                <div class="mb-1">
+                  <label class="info-label">State</label>
+                  <input
+                    type="text"
+                    class="form-control form-control-sm info-input"
+                    id=""
+                  />
+                </div>
+                <div class="text-center mt-2">
+                  <button type="submit" class="btn btn-success btn-sm w-75">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="mt-4">
+          <p>
+            An Integrated Academic Program With NEET-Focused Teaching for
+            Intermediate Students
+          </p>
+          <h3>You can reach us by following address in the below google map</h3>
+        </div>
+        <div class="p-4">
+          <img
+            src="assets/images/contactmap.png"
+            alt=""
+            width="100%"
+            height="550"
+          />
+        </div>
       </div>
     </div>
   </div>
-  <div class="row space" id="contact" [ngClass]="statusClass" #contact>
-    <div class="result-head">
-      <h2 class="ms-4">Contact Us</h2>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-4"></div>
-    <div class="col-sm-8 m-auto">
-      <img
-        src="assets/images/maps.png"
-        width="100%"
-        height="500px"
-        alt=""
-        style="padding: 20px"
-      />
-    </div>
-  </div>
-
   <div class="row bg-dark p-2">
     <div class="col-sm-4 p-2">
       <div class="text-center">
@@ -665,7 +811,7 @@
     <div class="col-sm-3 p-2">map</div>
   </div>
   <div class="row">
-    <span class="text-center bg-success text-light"
+    <span class="text-center bg-success text-light p-3"
       >copyrights@resonancekarimnagar 2023</span
     >
   </div>
